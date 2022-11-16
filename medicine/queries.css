@@ -1,0 +1,12 @@
+@media(max-width: 1280px){
+
+    .banner{
+        width: auto ;
+    }
+
+    .services{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding-right: 20px;
+    }
+}
