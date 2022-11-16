@@ -1,0 +1,977 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #F5F7FA;
+}
+a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+}
+.bar{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 30px;
+    margin: 20px;
+}
+.sidebar{
+    background: linear-gradient(to right, #3743AA 0%, #263077 100%);
+    color: #F5F6F7;
+    height: 552px;
+    border-radius: 10px;
+    padding: 40px 0px 20px 0px;
+    position: sticky;
+    top: 3%;
+
+}
+.profile{
+    padding-bottom: 10px;
+}
+.profile img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 63px;
+    border: 3px solid #F5F7FA;
+}
+.profile h4{
+    text-align: center;
+    font-weight: 500;
+    
+}
+.profile p{
+    text-align: center;
+    margin-top: -14px;
+    font-size: 12px;
+    color: rgb(212, 212, 212);
+}
+
+.sidebar .sidemenu ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 0px 18px 18px;
+    font-size: 14px;
+    margin-left: -24px;
+    color: rgb(173, 173, 173);
+    border-radius: 60px 0px 0px 60px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.sidebar .sidemenu ul li:hover{
+    color: #F5F7FA;
+}
+.icond{
+    font-size: 22px;
+    margin-right: 10px;
+    margin-bottom: -6px;  
+}
+.bottommenu{
+    position: absolute;
+    bottom: 2%;
+}
+
+.active{
+    background-color: #F5F7FA;
+    color: #3743AA !important;
+}
+
+.mainbar .topmain{
+    display: flex;  
+    align-items: center; 
+}
+.mainbar .topmain .mainh h1{
+    font-size: 24px;
+    color: #18324F;
+}
+.mainbar .topmain .mainmenu{
+    position: absolute;
+    right: 3%;
+}
+.mainbar .topmain .mainmenu ul{
+    display: flex;
+}
+.mainbar .topmain .mainmenu ul li{
+    list-style: none;
+    margin-left: 40px;
+    color: #B3BAC4;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.mainbar .topmain .mainmenu ul li:hover{
+    color: gray;
+}
+.mainbar .topmain .mainmenu ul .mainmenuactive{
+    color: rgb(110, 110, 110);
+    
+}
+
+.counter{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.counter .countbox{
+    background-color: #ffffff;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.6s;
+    box-shadow:0px 3px 3px 0px #f1f0f0;
+}
+.counter .countbox:hover{
+    transform: scale(1.08);
+    box-shadow:0px 2px 4px 0px #d6d5d5;
+}
+.counti{
+    font-size: 18px;
+    background-color: #F5F7FA;
+    
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.counti1{
+    color: #AA59FF;
+}
+.counti2{
+    color: #1FC598;
+}
+.counti3{
+    color: #3867CC;
+}
+.counti4{
+    color: #FFA1AA;
+}
+.counter .countbox .countcon{
+    margin-left:30px;
+    text-align: left;
+    
+}
+.counter .countbox .countcon p{
+    font-size: 12px;
+    color: rgb(170, 169, 169);
+    
+}
+.counter .countbox .countcon h1{
+    color: #18324F;
+    margin-top: -10px;
+}
+
+
+.appointmentslot{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+
+.appointmenthead{
+    display: flex;
+    align-items: center;
+}
+.appointmenthead span{
+    font-size: 14px;
+    font-weight: 600;
+    width: 430px;
+    text-align: right;
+    transition: all 0.4s;
+    
+}
+.appointmenthead span a:hover{
+    color: rgb(88, 86, 86);
+}
+.appointmentslotbox{
+    min-height: 260px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow:0px 3px 3px 0px #f1f0f0;
+    padding: 16px;
+    
+}
+.asb{
+    width: 100% !important;
+}
+.appointmentslotbox2{
+    min-height: 260px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow:0px 3px 3px 0px #f1f0f0; 
+    transition: all 0.4s;  
+    cursor: pointer;
+}
+.appointmentslotbox2:hover{
+    transform: scale(1.04);
+    box-shadow:0px 2px 4px 0px #d6d5d5;
+    
+}
+.appointmentbox .patient{
+    display: flex;
+    padding: 1px 16px;
+    align-items: center;
+    column-gap: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: rgb(88, 86, 86);
+}
+
+.appointmentbox .patient:hover{
+    background-color: #3743aa10;
+    color: #3743AA;
+}
+.appointmentbox .patient .patientimg img{
+    width: 54px;
+    border-radius: 50%;
+}
+.patient .patientdoc{
+    margin-left: 10px;
+    margin-top: -6px;
+}
+.patient .patientdoc p{
+    font-size: 11px;
+    margin-top: -6px;
+    width: 300px;
+    
+}
+.patient .time{
+    
+    width: 180px;
+    text-align: right;
+    
+    
+}
+.appointment{
+    color: rgb(88, 86, 86);
+}
+.slot{
+    color: rgb(88, 86, 86);
+}
+
+.mainbodyslot{
+    margin: 80px 0px;
+    
+}
+.mainbodyslot table{
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 4px solid #263077;
+    overflow: auto;
+}
+.mainbodyslot table th, td {
+    text-align: center;
+    padding: 16px 0px;
+    padding-left: 8px;
+    font-size: 11px;
+    text-align: left;
+   
+}
+
+
+.mainbodyslot table tr:nth-child(odd){
+    background-color: #edeef1;
+}
+.mainbodyslot table th{
+    background-color: #263077;
+    color: #e3e4e6;
+    font-size: 14px !important;
+}
+.editicon{
+    background-color: #178ff1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 3px;
+    pointer-events: none;
+    margin-right: 4px;
+}
+.deleteicon{
+    background-color: #d42c3a;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 3px;
+    margin-left: 4px;
+    pointer-events: none;
+    
+}
+.slot{
+    border-radius: 10px;
+}
+.slotbox{
+    
+    border-radius: 10px;
+    
+
+}
+
+
+.slotbox .days{
+    display: flex;
+    align-items: center;
+    column-gap: 42px;
+    padding: 1px 32px;
+    text-align: center;
+    margin-bottom: -10px;
+    border-bottom: 1px solid #e3e4e6;
+}
+.dayname,.time1,.time2,.Edit, .Delete{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    
+}
+.daysh{
+    background-color: #e3e4e6;
+    border-radius: 10px 10px 0px 0px;
+    color: rgb(88, 86, 86);
+}
+.slotbox .days div{
+    width: 120px;
+    
+}
+
+.days .dayname p{
+    font-size: 12px;
+    padding-top: 8px ;
+    color: rgb(88, 86, 86);
+}
+.days .time1 p{
+    font-size: 12px;
+    color: rgb(88, 86, 86);
+}
+.days .time2 p{
+    font-size: 12px;
+    color: rgb(88, 86, 86);
+}
+.lastdays{
+    border: none !important;
+    padding-bottom: 10px !important;
+}
+.firstdays{
+    padding-top: 10px !important;
+}
+
+.mainbodyslot .slotbox{
+    border: 2px solid #e3e4e6;
+    width: 840px;
+    margin-top: 20px;
+}
+
+
+.days .edit button{
+    border: 2px solid #1DC88C;
+    background-color: #1DC88C;
+    color: #F5F7FA;
+    padding: 4px 16px;
+    transition: all 0.4s;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -30px;
+    width: 80px;
+}
+.days .edit button:hover{
+    background-color: transparent;
+    color: #1DC88C;
+}
+.days .delete button{
+    border: 2px solid #EB483D;
+    padding: 4px 16px;
+    transition: all 0.4s;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -18px;
+    margin-top: 10px;
+    background-color: #EB483D;
+    color: #F5F7FA;
+    width: 80px;
+    
+}
+.days .delete button:hover{
+ 
+    background-color: transparent;
+    color: #EB483D;
+}
+.iconslot{
+    font-size: 22px;
+
+}
+.dayslot{
+    padding: 10px 32px !important;
+}
+.dayslotlast{
+    padding-bottom: 20px !important;
+}
+.mainbutton{
+    margin-left: 20px;
+    
+}
+.mainbutton button a{
+    color: #F5F7FA !important;
+    transition: all 0.4s;
+    
+}
+.mainbutton button a:hover{
+    color: #263077 !important;
+}
+.mainbutton button{
+    padding: 10px 16px;
+    color: #F5F7FA;
+    background-color: #263077;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.mainbutton button:hover{
+    background-color: #F5F6F7;
+    border: 2px solid #263077;
+    color: #263077;
+}
+
+.drform{
+    
+    border: 1px solid #c5c4c4;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow:4px 4px 4px 4px #e7e6e6;
+    
+    
+}
+
+
+.drform .drfr{
+    padding: 20px 40px 0px 40px;
+}
+.drform .drfr label{
+    display: block;
+    padding: 20px 0px 0px;
+}
+.drform .drfr input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.drform .drfr select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.drform .drfr .slottimegrid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+.drform .drfr .slottimegrid div{
+    background-color: #ffffff;
+    padding:0px 0px 18px 20px;
+    border-radius: 8px;
+    border: 1px solid #e3e4e6;
+    
+}
+.drform .drfr .slottimegrid div label{
+    text-align: left !important;
+    
+    margin-bottom: 6px;
+}
+.drform .drfr .slottimegrid input[type=time] {
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.slotto{
+    margin: 0px 10px;
+}
+.drform .drfr input[type=submit]{
+    width: 100%;
+    background: linear-gradient(to right, #3743AA 0%, #263077 100%);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+}
+.drform .drfr input[type=submit]:hover{
+    background: linear-gradient(to right, #263077 0%, #3743AA 100%);
+}
+
+.mbody{
+    margin-top: 30px;
+    width: 720px;
+}
+.detail{
+    padding-left: 80px;
+}
+.detail button{
+    padding: 6px 24px;
+    background-color: #263077;
+    color: #F5F7FA;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border: 2px solid #263077;
+}
+.detail button a{
+    color: #F5F7FA;
+}
+.detail button a:hover{
+    color: #3743AA;
+}
+.detail button:hover{
+    background-color: transparent;
+    color: #263077;
+    border: 2px solid #263077;
+}
+
+
+.patientsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 30px;
+}
+.patientsection .patientdetail{
+    background-color: #ffffff;
+   
+    border-radius: 10px;
+    box-shadow:0px 3px 3px 0px #f1f0f0;
+    padding: 32px;
+    height: 480px;
+    position: sticky;
+    top: 10%;
+    
+}
+.patientsection .patientreport{
+    background-color: #ffffff;
+    
+    border-radius: 10px;
+    box-shadow:0px 3px 3px 0px #f1f0f0;
+    padding: 32px;
+    
+}
+.patientsection .patientdetail .patientnameimg{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: rgb(88, 86, 86);
+    margin-bottom: 40px;
+}
+
+.patientsection .patientdetail .patientnameimg img{
+    width: 80px;
+    border-radius: 50%;
+}
+.patientsection .patientdetail .patientnameimg p{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.patientsection .patientdetail .pdetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.patientsection .patientdetail .pdetail div{
+    color: rgb(88, 86, 86);
+}
+.patientsection .patientdetail .pdetail div p{
+    font-size: 14px;
+    margin-top: -10px;
+}
+.psymptoms{
+    color: rgb(88, 86, 86);
+}
+.psymptoms p{
+    margin-top: -10px;
+    border: 1px solid rgb(212, 210, 210);
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #F5F7FA;
+}
+.patientreport h4{
+    color: rgb(88, 86, 86);
+    margin-bottom: 40px;
+}
+.attends{
+    background-color: #1fc59949;
+    display: inline;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: rgb(94, 92, 92);
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.attendlast{
+    margin-left: 20px;
+    background-color: rgba(255, 5, 5, 0.192);
+}
+.patientreport form{
+    color: rgb(88, 86, 86);
+    font-size: 14px;
+    font-weight: bold;
+}
+.patientreport form input[type=submit] {
+    width: 100%;
+    background: linear-gradient(to right, #3743AA 0%, #263077 100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 24px 0px 12px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s;
+  }
+  .patientreport form input[type=submit]:hover{
+    background: linear-gradient(to right, #263077 0%, #3743AA 100%);
+  }
+  .patientreport form textarea{
+    width: 100%;
+    color: rgb(88, 86, 86);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .patientreport form input[type=file]{
+    width: 100%;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .patientreport form input[type=radio]{
+    cursor: pointer;
+    accent-color: #067c0c;  
+    margin-top: 20px;
+  }
+  .patientreport form .notattend{
+    accent-color: #EB483D !important;  
+  }
+ 
+  .patientreport form .drpatientid div input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #9a9c9e;
+  }
+
+
+
+
+  .profiledetails{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    margin-top: 30px;
+  }
+  .profiledetails div{
+    background-color: #ffffff;
+    
+    border-radius: 10px;
+    color: rgb(88, 86, 86);
+  }
+
+  .profiledetails .details{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 2px 4px 4px #d3d4d691;
+    position: sticky;
+    top: 8%;
+  }
+  .profiledetails .details img{
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #263077;
+  }
+  .profiledetails .details h4{
+    margin-top: 40px;
+    margin-bottom: -4px;
+  }
+  .profiledetails .details h5{
+    
+    background-color: #F5F7FA;
+    text-align: center;
+    padding: 12px 0px;
+    border: 2px solid #263077;
+    border-radius: 40px;
+    width: 50%;
+  }
+  .profiledetails .details p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -4px;
+    padding: 8px 0;
+  }
+  .draddr{
+    
+    text-align: center;
+    margin: 0 16px;
+    
+  }
+  .profiledetails .editdetails{
+    padding: 10px 40px 40px 40px;
+    border: 1px solid #c5c4c4;
+  }
+  .profiledetails .editdetails .editform form{
+    font-size: 14px;
+    
+  }
+  .profiledetails .editdetails .editform form label{
+    display: block;
+    padding: 20px 0px 0px;
+  }
+
+  .profiledetails .editdetails .editform form input[type=text], input[type=tel],  input[type=email],input[type=password],
+  input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(88, 86, 86);
+}
+.profiledetails .editdetails .editform form select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(88, 86, 86);
+    cursor: pointer;
+}
+.profiledetails .editdetails .editform form input[type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(88, 86, 86);
+    cursor: pointer;
+}
+.profiledetails .editdetails .editform form input[type=submit]{
+    width: 100%;
+    background: linear-gradient(to right, #3743AA 0%, #263077 100%);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.profiledetails .editdetails .editform form input[type=checkbox]{
+    cursor: pointer;
+}
+
+.mainbody table tr td img{
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #18324F;
+}
+
+
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.4s;
+
+  }
+  
+ .accordion:hover {
+    background-color: #3743aa10;
+    color: #3743AA;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .panel table{
+    text-align: left;
+    margin: 16px 0;
+    
+  }
+  .panel table tr{
+    cursor: pointer;
+  }
+  .panel table tr th{
+    padding-top: 16px;
+    padding-right: 22px;
+    padding-left: 8px;
+    border-right: 1px solid #e3e4e6;
+    border-left: 1px solid #e3e4e6;
+    border-top: 1px solid #e3e4e6;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .panel table tr td{
+
+    padding-left: 8px;
+    
+    text-align: left;
+    
+    border-bottom: 1px solid #e3e4e6;
+    border-right: 1px solid #e3e4e6;
+    border-left: 1px solid #e3e4e6;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .panelicon{
+    position: absolute;
+    right: 4%;
+    font-size: 20px;
+    margin-bottom: -4px;
+  }
+
+  .requerd{
+    color: rgb(145, 9, 9);
+    
+    margin-left: 8px;
+    
+  }
+
+  .drprofilegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  
+  
+.history-body{
+    margin: 80px 0px;
+    overflow-x: auto;
+}
+.history-body table {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 4px solid #263077;
+  }
+  .history-body th{
+    background-color: #263077;
+    color: #e3e4e6;
+    font-size: 14px !important;
+    
+  } 
+  .history-body td{
+    width: 100px;
+    
+  }
+  .history-body .sugg{
+    text-align: left;
+    padding: 8px 0;
+    padding-right: 4px;
+    height: 48px;
+    width: 300px;
+    overflow: auto;
+  }
+.history-body th, td {
+    text-align: left;
+    padding: 16px 0px;
+    font-size: 11px;
+    padding-left: 8px !important;
+  }
+  
+.history-body tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.scroll {
+    overflow-y: scroll;
+    
+    
+  }
+  .scroll::-webkit-scrollbar {
+    width:3px;
+  }
+  .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(255, 255, 255, 0); 
+    border-radius:5px;
+  }
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius:8px;
+    -webkit-box-shadow: inset 6px 6px 6px #c3c3c9; 
+  }
+  .history-body td a{
+   
+    padding: 22px 0;
+    
+  }
+  .prescription-icon{
+    color: #263077;
+    font-size: 24px;
+    pointer-events: none;
+    width: 100%;
+  }
+  .deletereporticon{
+    color: #ffffff;
+    background-color: #D42C3A;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    padding: 4px;
+    display: flex;
+    margin: auto;
+  }
+  

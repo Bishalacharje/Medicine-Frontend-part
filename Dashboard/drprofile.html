@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="bar">
+        <div class="sidebar">
+            <div class="profile">
+                 <img src="img/doc2.jpg" alt="">
+                <h4>Dr. Stranger</h4>
+                <p>Dentist</p>
+            </div>
+            <div class="sidemenu">
+                <ul>
+                    <a href="index.html"> <li><ion-icon name="apps-outline" class="icond"></ion-icon>Dashboard</li></a>
+                    <a href="slot.html"><li><ion-icon name="calendar-outline" class="icond"></ion-icon>Slots</li></a>
+                    <a href="appointment.html"><li> <ion-icon name="people-outline" class="icond"></ion-icon> Appointments</li></a>
+                    <a href="history.html"><li><ion-icon name="receipt-outline" class="icond"></ion-icon>History</li></a>
+                </ul>
+                <ul class="bottommenu">
+                    <a href="#"><li><ion-icon name="log-out-outline" class="icond"></ion-icon>Logout</li></a>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="mainbar">
+            <div class="topmain">
+                <div class="mainh">
+                    <h1>Profile</h1>
+                </div>
+                <div class="mainmenu">
+                    <ul>
+                        <a href="#"><li><ion-icon name="help-circle-outline" class="icond"></ion-icon>Help</li></a>
+                        <a href="#"><li><ion-icon name="settings-outline" class="icond"></ion-icon>Setting</li></a>
+                        <a href="#"><li class="mainmenuactive"><ion-icon name="person-circle-outline" class="icond"></ion-icon>Profile</li></a>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mainbody">
+                
+                <div class="profiledetails">
+
+                    <div class="details">
+                        <img src="img/doc2.jpg" alt="">
+                        <h4>Mark Stranger</h4>
+                        
+                        <h5>Dentist</h5>
+                        
+                        <p>DR.ID: mark@1234</p>
+                        <p>E-mail: stranger@mail.com</p>
+                        <p>Phone: +91-89769-09127</p>
+                        <p class="draddr">Address: Dr Mark Stranger. 132, My Street, Kingston, New York 12401.</p>
+                        
+                    </div>
+
+                    <div class="editdetails">
+                        <h4>Edit Details</h4>
+                        <div class="editform">
+                    
+                            <form action="" method="">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" id="" value="Mark Stranger" placeholder="Enter full name" required>
+
+                                <div class="drprofilegrid">
+
+                                    <div>
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" name="phone" id="" value="8976909127" placeholder="Enter mobile number" required>
+                                    </div>
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="" value="stranger@mail.com" placeholder="Enter email" required>
+                                    </div>
+                                </div>
+                                
+                                
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="myInput" value="vghju56782" placeholder="Enter password" required>
+                                <input type="checkbox" onclick="myFunction()">Show Password
+                                <div class="drprofilegrid">
+                                    <div>
+                                        <label for="speciality">Speciality</label>
+                                        <select id="speciality" name="speciality">
+                                    
+                                            <option value="dentist">Dentist</option>
+                                            <option value="Gynecologist">Gynecologist/obstetrician</option>
+                                            <option value="physician">General physician</option>
+                                            <option value="Dermatology">Dermatology</option>
+                                            <option value="ENT">Ear-Nose-Throat(ENT)</option>
+                                            <option value="Homoeopath">Homoeopath</option>
+                                            <option value="Ayurveda">Ayurveda</option>
+                                    
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="image">Change Image</label>
+                                        <input type="file" name="image" id="">
+                                    </div>
+                                </div>
+                                
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="" value="Dr Mark Stranger. 132, My Street, Kingston, New York 12401." placeholder="Enter full address" required>
+                                <br>
+                                
+                                <input type="submit" value="Save">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>                                                    
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+
+</body>
+</html>
